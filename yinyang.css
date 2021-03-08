@@ -7,18 +7,36 @@
     position: relative;
 }
 
-#yinyang>.one {
-    width: 100px;
-    height: 100px;
+#yinyang::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     /* border: 1px solid red; */
-    background: #000;
+    background: #fff;
     position: absolute;
     top: 50px;
     left: 0px;
+    border: 45px solid #000;
 }
 
-#yinyang>.one>.circle {
+#yinyang::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    background: #000;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    border: 45px solid #fff;
+}
+
+
+/* #yinyang>.one>.circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -27,20 +45,10 @@
     top: 45px;
     left: 45px;
     background: #fff;
-}
+} */
 
-#yinyang>.two {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    /* border: 1px solid red; */
-    background: #fff;
-    position: absolute;
-    bottom: 50px;
-    right: 0px;
-}
 
-#yinyang>.two>.circle {
+/* #yinyang>.two>.circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -49,4 +57,4 @@
     top: 45px;
     left: 45px;
     background: #000;
-}
+} */
