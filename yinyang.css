@@ -1,3 +1,12 @@
+@keyframes animationFrames {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 #yinyang {
     width: 200px;
     height: 200px;
@@ -5,6 +14,10 @@
     border-radius: 50%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 100%);
     position: relative;
+    animation: animationFrames linear 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    margin: 100px auto 20px;
 }
 
 #yinyang::before {
@@ -33,6 +46,11 @@
     bottom: 50px;
     right: 0px;
     border: 45px solid #fff;
+}
+
+p {
+    color: black;
+    text-align: center;
 }
 
 
