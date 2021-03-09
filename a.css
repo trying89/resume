@@ -18,6 +18,12 @@ h6,
 p {
     margin: 0px;
     padding: 0px;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
 }
 
 hr {
@@ -110,6 +116,7 @@ hr {
     border: 1px solid red;
     max-width: 940px;
     margin: 0 auto;
+    box-shadow: -2px 3px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
 .userCard .pictureAndText {
@@ -202,4 +209,91 @@ hr {
     height: 30px;
     fill: white;
     vertical-align: top;
+}
+
+body>main {
+    margin-top: -250px;
+}
+
+body>main .downloadResume {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 21px 55px;
+    border: 1px solid #cdcfd1;
+    background: #efefef;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 32px 0px;
+    transition: box-shadow 0.2s;
+}
+
+body>main .downloadResume:hover {
+    box-shadow: -1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+body>main .downloadResume-wrapper {
+    text-align: center;
+}
+
+body>main .selfIntroduction {
+    max-width: 940px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: center;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+section.skills {
+    max-width: 940px;
+    margin: 60px auto 0px;
+}
+
+section.skills h2 {
+    color: #3d4451;
+    text-align: center;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+section.skills ol {
+    background: white;
+    box-shadow: -2px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    padding-inline-start: 0px;
+    margin-block: 0px;
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+
+section.skills ol>li {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+section.skills ol>li:nth-child(even) {
+    float: right;
+}
+
+section.skills h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+
+section.skills .progressBar {
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0px 40px;
+    /* border: 1px solid red; */
+}
+
+section.skills .progressBar .progress {
+    height: 100%;
+    background: #e6686a;
+    width: 50%;
+    border-radius: 2px;
 }
